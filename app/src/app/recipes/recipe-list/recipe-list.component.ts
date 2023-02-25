@@ -13,6 +13,11 @@ export class RecipeListComponent implements OnInit {
       'This is simple test',
       'https://img.delicious.com.au/Pwnp-j1O/w1200/del/2022/08/ramenara-ramen-carbonara-172843-2.png'
     ),
+    new Recipe(
+      'A test Recipe',
+      'This is simple test',
+      'https://img.delicious.com.au/Pwnp-j1O/w1200/del/2022/08/ramenara-ramen-carbonara-172843-2.png'
+    ),
   ];
   constructor() {}
   ngOnInit() {}
