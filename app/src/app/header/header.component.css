@@ -34,3 +34,6 @@
 .dropdown {
   margin-right: 20px;
 }
+.dropdown-item {
+  cursor: pointer;
+}
