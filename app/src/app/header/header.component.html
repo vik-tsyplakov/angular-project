@@ -19,11 +19,11 @@
     >
       <div class="collapse navbar-collapse d-flex justify-content-between">
         <ul class="nav navbar-nav">
-          <li class="mx-2">
-            <a href="#" (click)="onSelect('recipe')">Recipes</a>
+          <li class="mx-2 activeLinkText" routerLinkActive="activeLink">
+            <a routerLink="/recipes">Recipes</a>
           </li>
-          <li class="mx-2">
-            <a href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+          <li class="mx-2 activeLinkText" routerLinkActive="activeLink">
+            <a routerLink="shopping-list">Shopping List</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
