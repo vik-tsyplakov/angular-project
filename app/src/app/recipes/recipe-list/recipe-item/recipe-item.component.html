@@ -1,5 +1,5 @@
-<a class="list-group-item clearfix bg-light" (click)="onSelect()">
-  <div class="row">
+<a class="list-group-item clearfix bg-light" [routerLink]="[index]">
+  <div class="row" routerLinkActive="activeLink">
     <div class="float-start col-xs-8">
       <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
       <p class="list-group-item-text">{{ recipe.description }}</p>
@@ -8,7 +8,7 @@
       <img
         [src]="recipe.imagePath"
         alt="{{ recipe.name }}"
-        class="img-responsive"
+        class="img-responsive recipe-item__img"
         style="max-height: 100px"
       />
     </div>
