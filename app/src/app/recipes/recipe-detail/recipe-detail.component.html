@@ -3,14 +3,14 @@
     <img
       [src]="recipe.imagePath"
       alt="{{ recipe.name }}"
-      class="img-responsive img-fluid"
+      class="img-responsive img-fluid rounded-1"
       style="max-height: 300px"
     />
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h3>{{ recipe.name }}</h3>
+    <h3 class="mt-3 mb-3">{{ recipe.name }}</h3>
   </div>
 </div>
 <div class="row">
@@ -39,11 +39,11 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">{{ recipe.description }}</div>
+  <div class="col-xs-12 my-3">{{ recipe.description }}</div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <ul class="list-group">
+    <ul class="list-group mb-5">
       <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
         {{ ingredient.name }} - {{ ingredient.amount }}
       </li>
